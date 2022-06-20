@@ -3,7 +3,7 @@ const serpapi = require('./../lib/main');
 
 describe('Google Search', () => {
   it("json", (done) => {
-    let api_key = process.env.API_KEY
+    let api_key = '248a905a36a8b05a463154ec61be30338623b21dd715a8930794c0f7807f390b'
     if (api_key != null) {
       let search = new serpapi.GoogleSearch(api_key)
       search.json({
